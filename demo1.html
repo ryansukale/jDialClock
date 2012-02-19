@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+	<head>
+		
+		<link rel="stylesheet" href="css/jquery.widget.dialclock.css" />
+		
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery.ui.widget.js"></script>
+		<script type="text/javascript" src="js/jquery.widget.dialclock.js"></script>
+		
+		<script type="text/javascript">
+			$(function(){		
+				$('input[name="appointmentTime"]').eq(0).dialclock();
+				
+				$('input[name="appointmentTime"]').eq(1).dialclock();
+			});
+		</script>
+		
+		<style type="text/css">
+		body{
+			background-color:white;
+		}
+		</style>
+		
+	</head>
+	<body>
+		<div class="container">
+		
+			<div style="float:left;overflow:auto;background-color:blue;margin:10px;">
+				<input type="text" name="appointmentTime">
+				</input>
+				<br/>
+				<input type="text" name="appointmentTime">
+				</input>
+			</div>
+			
+		</div>
+	</body>
+	<style type="text/css">
+			
+	body{
+			background-color:white;
+		}
+			div.div2{
+				width:100px;
+				height:100px;
+				opacity: 0.7;
+				background-color:#00ccaa;
+				position:absolute;
+				top:-30px;
+				z-index:10;
+			}
+		
+		
+			.div1{
+				background-color:#00ccaa;
+				position:relative;
+				float:left;
+				z-index:10;
+				display:none;
+			}
+			
+			
+			div.container{
+				
+				overflow:auto;
+				width:400px;
+				height:300px;
+				background-color:white;
+			}
+
+
+
+		
+		</style>
+		
+</html>
